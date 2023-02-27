@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar__logo">
+                <img src="img/Logo_DerTecnica.svg" alt="">
+                <h2>D&R Técnica</h2>
+            </div>
+
+            <div class="nav__bar__list">
+                <ul>
+                    <li class="nav__bar__list__item">
+                        <a href="#" class="nav__bar__list__item__link">Home</a>
+                    </li>
+                    <li class="nav__bar__list__item">
+                        <a href="#" class="nav__bar__list__item__link">Serviços</a>
+                    </li>
+                    <li class="nav__bar__list__item">
+                        <a href="#" class="nav__bar__list__item__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__bar__button__dark__mode">
+                <input type="checkbox" class="checkbox" id="chk">
+
+                <label class="label" for="chk">
+                    <img src="img/lua.png" alt="">
+                    <img src="img/sol.png" alt="">
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+            <div class="mobile__menu__icon">
+                <button onclick="menuShow()"><img src="img/menu_white_36dp.svg" class="icon" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile__menu">
+            <ul>
+                <li class="nav__bar__list__item">
+                    <a href="#" class="nav__bar__list__item__link">Home</a>
+                </li>
+                <li class="nav__bar__list__item">
+                    <a href="#" class="nav__bar__list__item__link">Serviços</a>
+                </li>
+                <li class="nav__bar__list__item">
+                    <a href="#" class="nav__bar__list__item__link">Contato</a>
+                </li>
+            </ul>
+            
+            <div class="nav__bar__button__dark__mode">
+                <input type="checkbox" class="checkbox" id="chk1">
+
+                <label class="label" for="chk1">
+                    <img src="img/lua.png" alt="">
+                    <img src="img/sol.png" alt="">
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+        <script src="menushow.js"></script>
+    </header>
+</body>
+</html>
