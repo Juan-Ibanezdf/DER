@@ -64,7 +64,14 @@ header{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
+    color: #fff;
+    transition: .2s ease-in;
 }
+
+.nav__bar__list__item__link:hover{
+    color: #727171;
+}
+
 
 .nav__bar__button__dark__mode{
     border: none;
@@ -174,4 +181,57 @@ label > img{
     .open{
         display: block;
     }
+}
+
+/*Main*/
+
+/*Apresentação*/
+.apresentation{
+    height: 450px;
+    background-image: url("/img/bg-intro.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.apresentation h2{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 1rem 2rem;
+    font-size: 5vw;
+}
+
+.apresentation p{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 25rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+.apresentation .btn{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+    line-height: 2.5;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    transition: .2s ease-in;
+    border-radius: 5px;
+    text-align: center;
+}
+.apresentation .btn:hover{
+  color: #111;
+  background-color: #fff;
 }
