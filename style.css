@@ -343,12 +343,12 @@ color: var(--primary-color);
 
 /* Diferenciais */
 #diferenciais{
-    background-color:#f7f4f4;;   
+    background-color:#f7f4f4;  
 }
 
 .diferenciais-items{
     display: flex;
-    padding:4rem 9rem 4rem 9rem;
+    padding:4rem 7rem 3.5rem 7rem;
 }
 
 .logo-header{
@@ -365,53 +365,88 @@ color: var(--primary-color);
     display: flex;
     text-align: left;
     justify-content: center;
-    padding: 1rem 3.5rem 2rem 3.5rem;
+    padding: 1rem 3rem 2rem 3rem;
     line-height: 1.5rem;
     color: var(--primary-color);
 }
 
+
 /*Contato*/
 
-.contact{
+.contato{
     display: flex;
 }
 
-.content{
+.conteudo{
     width: 50%;
+    margin: 2rem;
 }
+
+.conteudo h2{
+    color: var(--primary-color);
+    padding: 1rem 1rem 0 0;
+    line-height: 3rem;
+}
+
+.conteudo h3{
+    padding: 1.5rem 0rem;
+}
+
+.conteudo p{
+    margin: 2rem 0;
+}
+
+.conteudo .button .whatsapp{
+    background-color: var(--primary-color);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.whatsapp a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whatsapp a img{
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+}
+
+.whatsapp a p{
+    align-items: center;
+
+    text-align: center;
+    color: var(--text-color-primary);
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.items img{
+    width: 30px;
+    height: 30px;
+}
+
 
 .map{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
 }
 
 
-#contato h2{
-    text-align: left;
-    margin: 1rem;
-    padding-top: 4rem;
-    color: var(--primary-color);
-}
 
-#contato h3{
-    text-align: left;
-    padding: 1rem 2rem 1rem 1rem;
-}
-
-.contato{
-    display: flex;
-    padding: 2em 7em;
-    flex-wrap: wrap;
-    gap: 3rem;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5rem;
-    padding-bottom: 1rem 1rem 5rem 0;
-    margin-bottom: 1rem;
-}
 
 .aling{
     display: flex;
@@ -437,7 +472,7 @@ color: var(--primary-color);
 
 @media screen and (max-width: 730px){
     .nav__bar__logo h2{
-        font-size: 1rem;
+        font-size: var(--text-size-regular);
     }
     .nav__bar{
         padding: 1.5rem 4rem;
@@ -483,9 +518,89 @@ color: var(--primary-color);
         display: block;
     }
 
+    .apresentation h2{
+        font-size: var(--text-size-medium);
+    }
     .apresentation p{
         padding: 2rem;
     }
+
+    .services{
+        flex-wrap: wrap;
+        margin: 0.5rem  .5rem 1em 1rem;
+    }
+
+    .services h2{
+        font-size: var(--text-size-medium);
+    }
+
+    .services p{
+        font-size: var(--text-size-regular);
+        text-align: left ;
+    }
+    .services li{
+        margin: 1rem 0;
+        font-size: var(--text-size-regular);
+    }
+    .services .btn{
+        font-size: var(--text-size-regular);
+        padding: 1rem;
+        text-align: center;
+    }
+    .diferenciais-items{
+        flex-wrap: wrap;
+        padding: 2rem ;
+    }
+    .diferenciais-items p{
+        padding: 2rem 1rem 4rem 3rem;
+    }
+
+    .contato{
+        flex-wrap: wrap;
+    }
+    .container{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .conteudo{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .conteudo span{
+        width: 40vh;
+        margin-bottom: 2rem;
+    }
+    
+    .conteudo .items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .email span{
+        padding-top: 2rem;
+        justify-content: center;
+        align-items: center;  
+    }
+    .telefone span{
+        padding-top: 2rem;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .endereco span{
+        padding-top: 2rem;
+        padding-right: 1rem;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+    }
+
 }
 
 @media screen and (max-width: 413px){
@@ -532,11 +647,49 @@ color: var(--primary-color);
         padding: 2rem 1rem 4rem 3rem;
     }
 
-    .contact{
+    .contato{
         flex-wrap: wrap;
     }
-    .contato{
-        padding: 0;
-        margin: 1rem;
+    .container{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .conteudo{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .conteudo span{
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+    
+    .conteudo .items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .email span{
+        padding-top: 2rem;
+        justify-content: center;
+        align-items: center;  
+    }
+    .telefone span{
+        padding-top: 2rem;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .endereco span{
+        padding-top: 2rem;
+        padding-right: 1rem;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
     }
 }
