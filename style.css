@@ -1,3 +1,15 @@
+:root{
+    --primary-color: #000033;
+    --secundary-color: #0f4c81;
+    --terciary-color: #007fff;
+    --quaternary-color: #87ceeb;
+    --text-color-primary: #fff;
+    --heading-brown: brown;
+    --heading-red: red;
+    --heading-yellow: #f1e702;
+}
+
+
 /*Importações externas*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
@@ -25,7 +37,7 @@ body.dark{
 
 /*Header*/
 header{
-    background-color: #24252a;
+    background-color: var(--primary-color);;
     box-shadow: 0px 3px #464646;
 }
 
@@ -41,7 +53,7 @@ header{
 }
 
 .nav__bar__logo h2{
-    color: #fff;
+    color: var(--text-color-primary);
     margin-left: -1px;
 }
 
@@ -64,7 +76,7 @@ header{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
-    color: #fff;
+    color: var(--text-color-primary);
     transition: .2s ease-in;
 }
 
@@ -133,69 +145,20 @@ label > img{
 .mobile__menu{
     display: none;
 }
-
-@media screen and (max-width: 730px){
-    .nav__bar__logo h2{
-        font-size: 1rem;
-    }
-    .nav__bar{
-        padding: 1.5rem 4rem;
-    }
-    .nav__bar__list__item{
-        display: none;
-    }
-    .nav__bar__button__dark__mode{
-        display: none;
-    }
-    .mobile__menu__icon{
-        /*Mudei aqui de block para flex*/
-        display: flex;
-        align-items: center;
-    }
-    .mobile__menu__icon button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-       
-    }
-
-
-    .mobile__menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-    .mobile__menu .nav__bar__list__item{
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .mobile__menu .nav__bar__button__dark__mode{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-    .open{
-        display: block;
-    }
-}
-
 /*Main*/
 
 /*Apresentação*/
 .apresentation{
     height: 450px;
-    background-image: url("/img/bg-intro.jpg"), #1b2087;
+    background-color:  var(--secundary-color);
+    background-image: url("./img/bg-intro.jpg");
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .apresentation h2{
-    color: #fff;
+    color: var(--text-color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,11 +167,12 @@ label > img{
 }
 
 .apresentation p{
-    color: #fff;
+    color: var(--text-color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 25rem;
+    padding: 2rem 10rem;
+    margin:0 10rem ;
     text-align: center;
     line-height: 1.5;
     font-size: 1.25em;
@@ -261,14 +225,13 @@ label > img{
 
 
 /* Services*/
-
 #services{
     background-color: #f7f4f4;
 }
 
 #services h2{
     text-align: center;
-    padding-top: 2rem;
+    padding: 3rem 0 2rem 0 ;
 }
 
 .services{
@@ -285,6 +248,19 @@ label > img{
 .service h3{
     border-bottom: 1px solid black;
     text-align: center;
+    cursor: pointer;
+}
+
+#industrial h3{
+    color:var(--heading-brown);
+}
+
+#eletrica h3{
+    color: var(--heading-yellow);
+}
+
+#hospitalar h3{
+ color: var(--heading-red);
 }
 .service{
     border-radius: 5px;
@@ -327,16 +303,42 @@ position: relative;
 
 .btn{
     font-weight: bold;
-    border: 1px solid blue;
     padding: .4em 1.5em;
     transition: .1s ease-in;
     border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
 }
 
+#industrial .btn{
+    border-color: var(--heading-brown);
+}
+
+#eletrica .btn{
+    border-color: var(--heading-yellow);
+}
+
+#hospitalar .btn{
+    border-color: var(--heading-red);
+}
 .btn:hover{
-    background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
     cursor: pointer;
-    background-color: #56ccf2;
+    background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
+}
+
+#industrial .btn:hover{
+    background-color: var(--heading-brown);
+    color: var(--text-color-primary);
+}
+
+#eletrica .btn:hover{
+    background-color: var(--heading-yellow);
+    color: var(--text-color-primary);
+}
+
+#hospitalar .btn:hover{
+    background-color: var(--heading-red);
+    color: var(--text-color-primary);
 }
 
 #contato{
@@ -345,30 +347,136 @@ position: relative;
 
 #contato h2{
     text-align: center;
-    padding:2rem 2rem;
+    margin: 1rem;
+    padding-top: 4rem;
 }
 
 .contato{
     display: flex;
     padding: 2em 7em;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 3rem;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10rem;
-    padding-bottom: 5rem;
+    margin: 5rem;
+    padding-bottom: 1rem 1rem 5rem 0;
+    margin-bottom: 1rem;
 }
-
 
 .aling{
     display: flex;
     align-items: center;
     gap: 1rem
 }
+
 .footer{
+    color: var(--text-color-primary);
     display: flex;
     align-items: center;
-    justify-content: left;
-    background-color: gray;
+    justify-content: center;
+    background-color: var(--primary-color);
     padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 946px){
+    .apresentation p{
+        padding: 2rem;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .nav__bar__logo h2{
+        font-size: 1rem;
+    }
+    .nav__bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav__bar__list__item{
+        display: none;
+    }
+    .nav__bar__button__dark__mode{
+        display: none;
+    }
+    .mobile__menu__icon{
+        /*Mudei aqui de block para flex*/
+        display: flex;
+        align-items: center;
+    }
+    .mobile__menu__icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+       
+    }
+
+    .mobile__menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile__menu .nav__bar__list__item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile__menu .nav__bar__button__dark__mode{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .apresentation p{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 413px){
+    .apresentation h2{
+        margin: 0;
+        padding: 3rem 2rem 0 2rem;
+    }
+    .apresentation p{
+        margin: 0;
+        padding: 1rem 1rem;
+        height: 225px;
+    }
+    .services{
+        flex-wrap: wrap;
+        margin: 0.5rem  .5rem 1em 1rem;
+    }
+
+    .services span{
+        font-size: 0.75em;
+        text-align: left ;
+    }
+    .services li{
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .services .btn{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .diferenciais-items{
+        flex-wrap: wrap;
+        padding: 2rem ;
+    }
+    .diferenciais-items p{
+        padding: 2rem 1rem 4rem 3rem;
+    }
+
+    .contato{
+        padding: 0;
+        margin: 1rem;
+    }
 }
