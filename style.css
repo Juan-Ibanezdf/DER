@@ -7,6 +7,10 @@
     --heading-brown: brown;
     --heading-red: red;
     --heading-yellow: #f1e702;
+    --text-size-bold: 3.75rem;
+    --text-size-medium: 1.5rem;
+    --text-size-regular: 0.75rem;
+    --text-size-small: 0.625rem;
 }
 
 
@@ -33,6 +37,11 @@ body{
 
 body.dark{
     background:#232c35;
+    color: var(--text-color-primary);
+}
+
+.container{
+    padding: 1rem 6rem 1rem 6rem;
 }
 
 /*Header*/
@@ -44,7 +53,6 @@ header{
 .nav__bar{
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
 }
 
 .nav__bar__logo{
@@ -54,12 +62,12 @@ header{
 
 .nav__bar__logo h2{
     color: var(--text-color-primary);
-    margin-left: -1px;
+    font-size: var(--text-size-medium);  
 }
 
 .nav__bar__list{
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
 
 .nav__bar__list ul{
@@ -74,20 +82,18 @@ header{
 
 .nav__bar__list__item__link{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: var(--text-size-medium);
     font-weight: 400;
     color: var(--text-color-primary);
     transition: .2s ease-in;
 }
 
 .nav__bar__list__item__link:hover{
-    color: #727171;
+    color: var(--secundary-color);
 }
 
 
 .nav__bar__button__dark__mode{
-    border: none;
-    /* background-color: white; */
     padding: 10px 15px;
     border-radius: 8px; 
 }
@@ -104,6 +110,7 @@ label > img{
 }
 
 .label{
+    border: 1px solid #111;
     background-color: #111;
     border-radius: 50px;
     cursor: pointer;
@@ -114,7 +121,7 @@ label > img{
 
     padding: 5px;
     position: relative;
-    height: 26px;
+    height: 28px;
     width: 50px;
 
     transform: scale(1.5);
@@ -163,7 +170,7 @@ label > img{
     align-items: center;
     justify-content: center;
     padding: 6rem 2rem 1rem 2rem;
-    font-size: 5vw;
+    font-size: var(--text-size-bold);
 }
 
 .apresentation p{
@@ -175,7 +182,7 @@ label > img{
     margin:0 10rem ;
     text-align: center;
     line-height: 1.5;
-    font-size: 1.25em;
+    font-size: var(--text-size-medium);
     font-weight: normal;
 }
 
@@ -183,7 +190,7 @@ label > img{
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff;
-    font-size: 1rem;
+    font-size: var(--text-size-regular);
     width: 100%;
     max-width: 300px;
     line-height: 2.5;
@@ -195,60 +202,38 @@ label > img{
     border-radius: 5px;
     text-align: center;
 }
-.apresentation .btn:hover{
-  color: #111;
-  background-color: #fff;
+
+.apresentation a{
+    text-decoration: none;
 }
 
-/* Diferenciais */
-
-.diferenciais-items{
-    display: flex;
-    padding:4rem 9rem 4rem 9rem;
-}
-.logo-header{
- display: flex;
- align-items: center;
- justify-content: left;
-}
-.logo-header img{
-    padding-right: 1rem;
-}
-
-.diferenciais-text{
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    padding: 1rem 3.5rem 2rem 3.5rem;
-    line-height: 1.5rem;
+.apresentation .btn:hover {
+  color: var(--primary-color);
+  background-color: #fff; 
 }
 
 
 /* Services*/
-#services{
-    background-color: #f7f4f4;
-}
-
 #services h2{
     text-align: center;
     padding: 3rem 0 2rem 0 ;
+    color: var(--primary-color);
+    font-size: var(--text-size-medium);
 }
 
 .services{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: left;
     margin: 1rem 10rem 1rem 10rem
     
-}
-.service{
-    background-color: #F7F4F4;   
 }
 
 .service h3{
     border-bottom: 1px solid black;
     text-align: center;
-    cursor: pointer;
+    font-size: var(--text-size-medium);
 }
 
 #industrial h3{
@@ -262,35 +247,42 @@ label > img{
 #hospitalar h3{
  color: var(--heading-red);
 }
+
 .service{
     border-radius: 5px;
     border: 1px solid #DFE3E5;
-    font-size: 1.3rem;
+    font-size: var(--text-size-medium);
     margin:0 .5em 2em .5em;
     padding:1em 1rem 2em 1rem;
     font-weight: bolder;
     width: 80%;
     display: inline-block;
     box-shadow: 0 2px 9px #ddd;
+    align-items: center;
+}
+
+.service a{
+    text-decoration: none;
 }
 
 .service h3{
 font-weight: bolder;
 width: 100%;
 padding: .4em 1em;
-font-size: 1em;
+font-size: var(--text-size-medium);
 border-bottom: 1px solid #DFE3E5;
 margin-bottom: .5em;
 }
 
-.service span{
-margin-left: 12px;
-color: inherit;
-text-align:center ;
-font-size: 1em;
-margin-top: 12px;
-display: inline;
+.service p{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align:left;
+font-size: var(--text-size-medium);
 position: relative;
+padding: 1rem 2rem;
+color: var(--primary-color);
 }
 
 .service ul{
@@ -299,6 +291,8 @@ position: relative;
     line-height: 2;
     list-style: disc;
     color: #666;
+    font-size: var(--text-size-medium);
+    margin-bottom: 1rem;
 }
 
 .btn{
@@ -310,17 +304,22 @@ position: relative;
     border-style: solid;
 }
 
+
 #industrial .btn{
     border-color: var(--heading-brown);
+    color: var(--heading-brown);
 }
 
 #eletrica .btn{
     border-color: var(--heading-yellow);
+    color: var(--heading-yellow);
 }
 
 #hospitalar .btn{
     border-color: var(--heading-red);
+    color: var(--heading-red);
 }
+
 .btn:hover{
     cursor: pointer;
     background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
@@ -341,14 +340,64 @@ position: relative;
     color: var(--text-color-primary);
 }
 
-#contato{
-    background-color: #f7f4f4;
+/* Diferenciais */
+#diferenciais{
+    background-color:#f7f4f4;;   
 }
 
+.diferenciais-items{
+    display: flex;
+    padding:4rem 9rem 4rem 9rem;
+}
+
+.logo-header{
+ display: flex;
+ align-items: center;
+ justify-content: left;
+ color: var(--primary-color);
+}
+.logo-header img{
+    padding-right: 1rem;
+}
+
+.diferenciais-text{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    padding: 1rem 3.5rem 2rem 3.5rem;
+    line-height: 1.5rem;
+    color: var(--primary-color);
+}
+
+/*Contato*/
+
+.contact{
+    display: flex;
+}
+
+.content{
+    width: 50%;
+}
+
+.map{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
 #contato h2{
-    text-align: center;
+    text-align: left;
     margin: 1rem;
     padding-top: 4rem;
+    color: var(--primary-color);
+}
+
+#contato h3{
+    text-align: left;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 .contato{
@@ -441,29 +490,36 @@ position: relative;
 @media screen and (max-width: 413px){
     .apresentation h2{
         margin: 0;
-        padding: 3rem 2rem 0 2rem;
+        padding: 4rem 2rem 0 2rem;
+        font-size: var(--text-size-medium);
     }
     .apresentation p{
         margin: 0;
-        padding: 1rem 1rem;
+        padding: 0rem 3rem;
         height: 225px;
+        font-size: var(--text-size-regular);
     }
+
     .services{
         flex-wrap: wrap;
         margin: 0.5rem  .5rem 1em 1rem;
     }
 
-    .services span{
-        font-size: 0.75em;
+    .services h2{
+        font-size: var(--text-size-medium);
+    }
+
+    .services p{
+        font-size: var(--text-size-regular);
         text-align: left ;
     }
     .services li{
         margin: 1rem 0;
-        font-size: 1rem;
+        font-size: var(--text-size-regular);
     }
 
     .services .btn{
-        font-size: 1rem;
+        font-size: var(--text-size-regular);
         padding: 1rem;
     }
 
@@ -475,6 +531,9 @@ position: relative;
         padding: 2rem 1rem 4rem 3rem;
     }
 
+    .contact{
+        flex-wrap: wrap;
+    }
     .contato{
         padding: 0;
         margin: 1rem;

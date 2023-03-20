@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DL SUPLLIESMA</title>
+    <link
+      rel="shortcut icon"
+      href="./img/Logo_DerTecnica.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
-      <nav class="nav__bar">
+      <nav class="nav__bar container">
         <div class="nav__bar__logo">
           <img src="img/Logo_DerTecnica.svg" alt="" />
           <h2>D&L SUPPLIES</h2>
@@ -21,10 +26,12 @@
               <a href="#" class="nav__bar__list__item__link">Home</a>
             </li>
             <li class="nav__bar__list__item">
-              <a href="#" class="nav__bar__list__item__link">Serviços</a>
+              <a href="#services" class="nav__bar__list__item__link"
+                >Serviços</a
+              >
             </li>
             <li class="nav__bar__list__item">
-              <a href="#" class="nav__bar__list__item__link">Contato</a>
+              <a href="#contato" class="nav__bar__list__item__link">Contato</a>
             </li>
           </ul>
         </div>
@@ -73,15 +80,15 @@
       <script src="script.js"></script>
       <script src="menushow.js"></script>
     </header>
+
     <main id="main">
       <section id="apresentation" class="apresentation">
-        <h2>Manutenções Rápidas</h2>
+        <h2>DLsupplies Manutenções</h2>
         <p>
-          A D&L é uma empresa com um jeito inovador de efetuar
-          manutenções para hospitais, clinicas de estética, pequenas e medias
-          empresas
+          A D&Lsupplies é uma empresa que efetuar manutenções para hospitais,
+          clinicas de estética, pequenas e médias empresas
         </p>
-        <div class="btn">Peça um Orçamento</div>
+        <a href="#contato"><div class="btn">Peça um Orçamento</div></a>
       </section>
 
       <section id="services">
@@ -89,33 +96,39 @@
         <div class="services">
           <div class="service" id="industrial">
             <h3>Industrial</h3>
-            <span>Acessórios para equipamentos industriais</span>
+            <p>Acessórios para equipamentos industriais</p>
             <ul>
               <li>Sensores Industriais</li>
-              <li>Componenetes eletricos</li>
+              <li>Componentes elétricos</li>
             </ul>
-            <div class="btn">Solicitar orçamento</div>
+            <a href="#contato">
+              <div class="btn">Solicitar orçamento</div>
+            </a>
           </div>
           <div class="service" id="eletrica">
             <h3>Elétrica</h3>
-            <span>Montagem de paínes eletricos</span>
+            <p>Montagem de painéis elétricos</p>
             <ul>
-              <li>Dijuntores</li>
-              <li>Sinalieros</li>
+              <li>Dinjuntores</li>
+              <li>Sinaleiros</li>
               <li>Contatores</li>
               <li>Coolers</li>
             </ul>
-            <div class="btn">Solicitar orçamento</div>
+            <a href="#contato">
+              <div class="btn">Solicitar orçamento</div>
+            </a>
           </div>
           <div class="service" id="hospitalar">
             <h3>Hospitalar</h3>
-            <span>Acessórios para equipmanetos Hospitalares</span>
+            <p>Acessórios para equipmanetos Hospitalares</p>
             <ul>
               <li>Bisturi Elétrico</li>
               <li>Mesa Cirurgica</li>
               <li>Monitor Cardiaco</li>
             </ul>
-            <div class="btn">Solicitar orçamento</div>
+            <a href="#contato">
+              <div class="btn">Solicitar orçamento</div>
+            </a>
           </div>
         </div>
       </section>
@@ -158,37 +171,59 @@
         </div>
       </section>
 
-      <section id="contato">
-        <h2>Solicite um Orçamento entrando em contato por:</h2>
-        <div class="contato">
+      <section id="contato" class="contact">
+        <div class="content">
+          <h2>Contato</h2>
+
+          <h3>Ou melhor, venha nos visitar</h3>
+          <span
+            >Nossos clientes são importantes para nós. Ficamos contentes em
+            receber a sua visita durante nosso horário comercial.</span
+          >
+          <div class="contato">
             <div class="aling whatsapp">
-                <img src="/img/whatsapp.png" alt="whatsapp">
-                <span>Clique no Ícone de whatsapp 
-                    ou <br/>mande uma mensagem para: 98 98501-4843</span>
+              <img src="/img/whatsapp.png" alt="whatsapp" />
+              <span>Envie uma mensagem</span>
             </div>
             <div class="email aling">
-                <img src="./img/mail.png" alt="E-mail">
-                <span>Envie um e-mail para: <br/>dlsupplies@gmail.com</span>
-                
+              <img src="./img/mail.png" alt="E-mail" />
+              <span>Envie um e-mail para: <br />dlsupplies@gmail.com</span>
             </div>
             <div class="telefone aling">
-                <img src="./img/phone.png" alt="telefone">
-                <span>Ligue para: 98 98501-4843</span>
+              <img src="./img/phone.png" alt="telefone" />
+              <span>Ligue para: 98 98501-4843</span>
             </div>
             <div class="endereco aling">
-                <img src="./img/google-maps.png" alt="Endereço">
-                <span>Endereço: Rua B, Alto Paranã III, Nº 87,<br/> CEP: 65130-000, Paço do Lumiar, MA, Brasil</span>
+              <img src="./img/google-maps.png" alt="Endereço" />
+              <span
+                >Endereço: AV 01, Apartamento Nº 2, CP 42 CS 22 PS 6 JARDIM
+                PRIMAVERA<br />
+                CEP: 65130-000, Paço do Lumiar, MA, Brasil</span
+              >
             </div>
+          </div>
         </div>
-    </section>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1775.536918828826!2d-44.10577307244139!3d-2.5246456892303892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f697d12edb0b97%3A0x4b48f26791e6d95a!2sResidencial%20jardim%20primavera!5e0!3m2!1spt-BR!2sbr!4v1679342791920!5m2!1spt-BR!2sbr"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
+
     <footer id="footer" class="footer">
-        <div class="logo">
-            <img src="./img/Logo_DerTecnica.svg" alt="Logo DeR Técnica">
-        </div>
-        <div class="copy">
-            <span> &copy; Todos os direitos reservados - 2023</span>
-        </div>
+      <div class="logo">
+        <img src="./img/Logo_DerTecnica.svg" alt="Logo DeR Técnica" />
+      </div>
+      <div class="copy">
+        <span> &copy; Todos os direitos reservados - 2023</span>
+      </div>
     </footer>
   </body>
 </html>
