@@ -235,3 +235,140 @@ label > img{
   color: #111;
   background-color: #fff;
 }
+
+/* Diferenciais */
+
+.diferenciais-items{
+    display: flex;
+    padding:4rem 9rem 4rem 9rem;
+}
+.logo-header{
+ display: flex;
+ align-items: center;
+ justify-content: left;
+}
+.logo-header img{
+    padding-right: 1rem;
+}
+
+.diferenciais-text{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    padding: 1rem 3.5rem 2rem 3.5rem;
+    line-height: 1.5rem;
+}
+
+
+/* Services*/
+
+#services{
+    background-color: #f7f4f4;
+}
+
+#services h2{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 10rem 1rem 10rem
+    
+}
+.service{
+    background-color: #F7F4F4;   
+}
+
+.service h3{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.service{
+    border-radius: 5px;
+    border: 1px solid #DFE3E5;
+    font-size: 1.3rem;
+    margin:0 .5em 2em .5em;
+    padding:1em 1rem 2em 1rem;
+    font-weight: bolder;
+    width: 80%;
+    display: inline-block;
+    box-shadow: 0 2px 9px #ddd;
+}
+
+.service h3{
+font-weight: bolder;
+width: 100%;
+padding: .4em 1em;
+font-size: 1em;
+border-bottom: 1px solid #DFE3E5;
+margin-bottom: .5em;
+}
+
+.service span{
+margin-left: 12px;
+color: inherit;
+text-align:center ;
+font-size: 1em;
+margin-top: 12px;
+display: inline;
+position: relative;
+}
+
+.service ul{
+    margin-left: 3rem;
+    text-align: left;
+    line-height: 2;
+    list-style: disc;
+    color: #666;
+}
+
+.btn{
+    font-weight: bold;
+    border: 1px solid blue;
+    padding: .4em 1.5em;
+    transition: .1s ease-in;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
+    cursor: pointer;
+    background-color: #56ccf2;
+}
+
+#contato{
+    background-color: #f7f4f4;
+}
+
+#contato h2{
+    text-align: center;
+    padding:2rem 2rem;
+}
+
+.contato{
+    display: flex;
+    padding: 2em 7em;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10rem;
+    padding-bottom: 5rem;
+}
+
+
+.aling{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: gray;
+    padding: 2rem 1rem;
+}

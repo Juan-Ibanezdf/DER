@@ -1,150 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header id="header">
-        <nav class="nav__bar">
-            <div class="nav__bar__logo">
-                <img src="img/Logo_DerTecnica.svg" alt="">
-                <h2>D&R Técnica</h2>
-            </div>
-
-            <div class="nav__bar__list">
-                <ul>
-                    <li class="nav__bar__list__item">
-                        <a href="#" class="nav__bar__list__item__link">Home</a>
-                    </li>
-                    <li class="nav__bar__list__item">
-                        <a href="#" class="nav__bar__list__item__link">Serviços</a>
-                    </li>
-                    <li class="nav__bar__list__item">
-                        <a href="#" class="nav__bar__list__item__link">Contato</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="nav__bar__button__dark__mode">
-                <input type="checkbox" class="checkbox" id="chk">
-
-                <label class="label" for="chk">
-                    <img src="img/lua.png" alt="">
-                    <img src="img/sol.png" alt="">
-                    <div class="ball"></div>
-                </label>
-            </div>
-
-            <div class="mobile__menu__icon">
-                <button onclick="menuShow()"><img src="img/menu_white_36dp.svg" class="icon" alt=""></button>
-            </div>
-        </nav>
-
-        <div class="mobile__menu">
-            <ul>
-                <li class="nav__bar__list__item">
-                    <a href="#" class="nav__bar__list__item__link">Home</a>
-                </li>
-                <li class="nav__bar__list__item">
-                    <a href="#" class="nav__bar__list__item__link">Serviços</a>
-                </li>
-                <li class="nav__bar__list__item">
-                    <a href="#" class="nav__bar__list__item__link">Contato</a>
-                </li>
-            </ul>
-            
-            <div class="nav__bar__button__dark__mode">
-                <input type="checkbox" class="checkbox" id="chk1">
-
-                <label class="label" for="chk1">
-                    <img src="img/lua.png" alt="">
-                    <img src="img/sol.png" alt="">
-                    <div class="ball"></div>
-                </label>
-            </div>
-
+      <nav class="nav__bar">
+        <div class="nav__bar__logo">
+          <img src="img/Logo_DerTecnica.svg" alt="" />
+          <h2>D&R Técnica</h2>
         </div>
 
-        <script src="script.js"></script>
-        <script src="menushow.js"></script>
+        <div class="nav__bar__list">
+          <ul>
+            <li class="nav__bar__list__item">
+              <a href="#" class="nav__bar__list__item__link">Home</a>
+            </li>
+            <li class="nav__bar__list__item">
+              <a href="#" class="nav__bar__list__item__link">Serviços</a>
+            </li>
+            <li class="nav__bar__list__item">
+              <a href="#" class="nav__bar__list__item__link">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__bar__button__dark__mode">
+          <input type="checkbox" class="checkbox" id="chk" />
+
+          <label class="label" for="chk">
+            <img src="img/lua.png" alt="" />
+            <img src="img/sol.png" alt="" />
+            <div class="ball"></div>
+          </label>
+        </div>
+
+        <div class="mobile__menu__icon">
+          <button onclick="menuShow()">
+            <img src="img/menu_white_36dp.svg" class="icon" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile__menu">
+        <ul>
+          <li class="nav__bar__list__item">
+            <a href="#" class="nav__bar__list__item__link">Home</a>
+          </li>
+          <li class="nav__bar__list__item">
+            <a href="#" class="nav__bar__list__item__link">Serviços</a>
+          </li>
+          <li class="nav__bar__list__item">
+            <a href="#" class="nav__bar__list__item__link">Contato</a>
+          </li>
+        </ul>
+
+        <div class="nav__bar__button__dark__mode">
+          <input type="checkbox" class="checkbox" id="chk1" />
+
+          <label class="label" for="chk1">
+            <img src="img/lua.png" alt="" />
+            <img src="img/sol.png" alt="" />
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+      <script src="menushow.js"></script>
     </header>
     <main id="main">
-        <section id="apresentation" class="apresentation">
-            <h2>Manutenções Rápidas</h2>
-            <p>A D&R Técnica é uma empresa com um jeito inovador de efetuar manutenções para hospitais, clinicas de estética, pequenas e medias empresas
-            </p>
-            <div class="btn">
-                Peça um Orçamento
-            </div>
-        </section>
-        
-        <section id="diferenciais">
-            <div class="tempo">
-                <img src="" alt="">
-                <h2>Tempo</h2>
-                <div class="img"></div>
-                <p>Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente os prazos.</p>
-            </div>
-            <div class="foco">
-                <img src="" alt="">
-                <h2>Foco</h2>
-                <div class="img"></div>
-                <p>Focado no empreendedor, oferecemos serviços de qualidade com preços acessíveis.</p>
-            </div>
-            <div class="especialista">
-                <img src="" alt="">
-                <h2>Especialistas</h2>
-                <div class="img"></div>
-                <p>Equipe especializada, com experiência profissionais. </p>
-            </div>
-        </section>
+      <section id="apresentation" class="apresentation">
+        <h2>Manutenções Rápidas</h2>
+        <p>
+          A D&R Técnica é uma empresa com um jeito inovador de efetuar
+          manutenções para hospitais, clinicas de estética, pequenas e medias
+          empresas
+        </p>
+        <div class="btn">Peça um Orçamento</div>
+      </section>
 
-        <section id="services">
-            <h2>TRABALHAMOS COM</h2>
-            <div>
-                <h3>Industrial</h3>
-                <span>Acessórios para equipamentos indústriais</span>
-                <ul>
-                    <li>Sensores Indústriais</li>
-                    <li>Componenetes eletricos</li>
-                </ul>
-                <div class="btn">Solicitar orçamento</div>
+      <section id="services">
+        <h2>TRABALHAMOS COM:</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Industrial</h3>
+            <span>Acessórios para equipamentos indústriais</span>
+            <ul>
+              <li>Sensores Indústriais</li>
+              <li>Componenetes eletricos</li>
+            </ul>
+            <div class="btn">Solicitar orçamento</div>
+          </div>
+          <div class="service">
+            <h3>Elétrica</h3>
+            <span>Montagem de paínes eletricos</span>
+            <ul>
+              <li>Dijuntores</li>
+              <li>Sinalieros</li>
+              <li>Contatores</li>
+              <li>Cooers</li>
+            </ul>
+            <div class="btn">Solicitar orçamento</div>
+          </div>
+          <div class="service">
+            <h3>Hospitalar</h3>
+            <span>Acessórios para equipmanetos Hospitalares</span>
+            <ul>
+              <li>Bisturi Elétrico</li>
+              <li>Mesa Cirurgica</li>
+              <li>Monitor Cardiaco</li>
+            </ul>
+            <div class="btn">Solicitar orçamento</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="diferenciais" class="diferenciais">
+        <div class="diferenciais-items">
+          <div class="tempo">
+            <div class="logo-header">
+              <img src="img/icone-relogio.png" alt="icone-relogio" />
+              <h2>Tempo</h2>
             </div>
-            <div>
-                <h3>Elétrica</h3>
-                <span>Montagem de paínes eletricos</span>
-                <ul>
-                    <li>Dijuntores</li>
-                    <li>Sinalieros</li>
-                    <li>Contatores</li>
-                    <li>Cooers</li>
-                </ul>
-                <div class="btn">Solicitar orçamento</div>
+            <div class="img"></div>
+            <p class="diferenciais-text">
+              Tempo é importante! Trabalhamos em ritmo acelerado, atendendo
+              rigorosamente os prazos.
+            </p>
+          </div>
+
+          <div class="foco">
+            <div class="logo-header">
+              <img src="img/icone-dinheiro.png" alt="icone-dinheiro" />
+              <h2>Foco</h2>
             </div>
-            <div>
-                <h3>Hospitalar</h3>
-                <span>Acessórios para equipmanetos Hospitalares</span>
-                <ul>
-                    <li>Bisturi Elétrico</li>
-                    <li>Mesa Cirurgica</li>
-                    <li>Monitor Cardiaco</li>
-                </ul>
-                <div class="btn">Solicitar orçamento</div>
+            <div class="img"></div>
+            <p class="diferenciais-text">
+              Focado no empreendedor, oferecemos serviços de qualidade com
+              preços acessíveis.
+            </p>
+          </div>
+
+          <div class="especialista">
+            <div class="logo-header">
+              <img src="img/icone-quimica.png" alt="" />
+              <h2>Especialistas</h2>
             </div>
-        </section>
-        <section>
-            Sobre
-        </section>
-        <section>
-            Contato
-        </section>
+            <p class="diferenciais-text">
+              Equipe especializada, com experiência profissionais.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2>Solicite um Orçamento entrando em contato por:</h2>
+        <div class="contato">
+            <div class="aling whatsapp">
+                <img src="/img/whatsapp.png" alt="whatsapp">
+                <span>Clique no Ícone de whatsapp 
+                    ou <br/>mande uma mensagem para: 99 9999-9999</span>
+            </div>
+            <div class="email aling">
+                <img src="./img/mail.png" alt="E-mail">
+                <span>Envie um e-mail para: <br/>emial@gmail.com</span>
+                
+            </div>
+            <div class="telefone aling">
+                <img src="./img/phone.png" alt="telefone">
+                <span>Ligue para: 99 9999-9999</span>
+            </div>
+            <div class="endereco aling">
+                <img src="./img/google-maps.png" alt="Endereço">
+                <span>Endereço: xxxxx xxxxx</span>
+            </div>
+        </div>
+    </section>
     </main>
-    <footer id="footer">
-        <span>Todos os direitos reservados</span>
+    <footer id="footer" class="footer">
+        <div class="logo">
+            <img src="./img/Logo_DerTecnica.svg" alt="Logo DeR Técnica">
+        </div>
+        <div class="copy">
+            <span> &copy; Todos os direitos reservados - 2023</span>
+        </div>
     </footer>
-</body>
+  </body>
 </html>
