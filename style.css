@@ -188,7 +188,7 @@ label > img{
 /*Apresentação*/
 .apresentation{
     height: 450px;
-    background-image: url("/img/bg-intro.jpg");
+    background-image: url("/img/bg-intro.jpg"), #1b2087;
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
